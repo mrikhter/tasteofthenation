@@ -1,0 +1,27 @@
+<div class="span4">
+  <h1>Restaurants</h1>
+  <div class="accordion" id="accordion2">
+
+    <ul class="restaurants"><% @user_restaurants.sort_by{|r| r.restaurant.name}.each do |r| %>
+      <li>
+      <div class="accordion-group">
+      <div class="accordion-heading">
+        <% check_value = true if r.attended == true %>
+        <%= check_box_tag r.id, 'yes', check_value, :class => 'regular-checkbox', :style => "margin: 3px;" %>
+        
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<%= r.restaurant.name.downcase.gsub(/\s+/, "").gsub('&', "").gsub(/'/, "") %>">
+        <%= r.restaurant.name %></a>
+      </div>
+
+      <div id="collapse<%= r.restaurant.name.downcase.gsub(/\s+/, "").gsub('&', "").gsub(/'/, "") %>" class="accordion-body collapse out">
+        <div class="accordion-inner">
+          dishes from the restaurant
+        </div>
+      </div>
+      </div>
+         <% end %>
+      </li>
+    </ul>
+
+  </div> 
+</div>

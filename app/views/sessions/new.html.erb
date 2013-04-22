@@ -1,0 +1,18 @@
+<div class="first-page">
+  <div class='row-fluid'>
+    <div class='span 8'>
+      <h1>Log In</h1>  
+        
+      <%= form_tag sessions_path, {:class => 'form-4'} do  %>  
+        <p>  
+          <%= text_field_tag :email, params[:email], :placeholder => 'email' %>  
+        </p>  
+        <p>   
+          <%= password_field_tag :password, '', :placeholder => 'password'  %>  
+        </p>  
+        <p class="button"><%= submit_tag "SIGN IN" %></p>  
+      <% end %> 
+      Not a member? <span><%= link_to "Sign-up", new_user_path%></span>
+    </div>
+  </div>
+</div>
