@@ -45,15 +45,12 @@ body {
 }
 
 .login-form {
-margin-left: 65px;
 position: relative;
+text-align: center;
 }
 
-.login-form h2,
-.login-form h4 {
+.form-headers {
 text-align: center;
-padding: 5px;
-width: 206px;
 }
 
 legend {
@@ -104,8 +101,6 @@ ul.user_nav li{
 }
 
 .alert.alert-error {
-  width: 206px;
-  padding: 5px;
   text-align: center;
   font-size: 1em;
 }

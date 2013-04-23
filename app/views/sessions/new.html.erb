@@ -1,13 +1,15 @@
 <div class="container">
     <div class="content">
-      <div class="row">
-        <div class="login-form">
+<!--       <div class="row"> -->
+        <div class="form-headers">
       <h2>Log In</h2>  
+    </div>
         <div class="alert alert-error">
         <% flash.each do |name, msg| %>
           <%= content_tag :div, msg, :id => "flash#{name}" %>
         <% end %>
       </div>
+      <div class="login-form">
        <fieldset>
         <div class="clearfix"> 
       <%= form_tag sessions_path, {:class => 'form-4'} do  %>  
@@ -15,11 +17,11 @@
           <%= text_field_tag :username, params[:username], :placeholder => 'username' %>  
         </p>  
       </div>
-        <button class="btn btn-main" type="submit">Log In</button> 
+        <button class="btn btn-main" type="submit">Log In</button></br></br> 
       <% end %> 
       Not a member? <span id="signup"><%= link_to "Sign Up", new_user_path%></span>
       </fieldset>
-      </div>
+<!--       </div> -->
     </div>
   </div>
 </div>

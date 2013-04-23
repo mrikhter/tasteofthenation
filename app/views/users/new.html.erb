@@ -1,9 +1,10 @@
 <div class="container">
     <div class="content">
-      <div class="row">
-        <div class="login-form">
+ <!--      <div class="row"> -->
+        <div class="form-headers">
           <h2>Sign Up</h2>
           <h4>Create a username to check out your options and keep track of where you've been!</h4>  
+        </div>
           <%= form_for @user do |f|  %>  
             <% if @user.errors.any? %>  
               <div class="alert alert-error">     
@@ -11,7 +12,8 @@
                     <%= message %>
                   <% end %>  
               </div>  
-            <% end %>  
+            <% end %> 
+            <div class="login-form"> 
             <fieldset>
           <div class="clearfix"> 
             <p>  
@@ -22,4 +24,7 @@
             <p><%= f.submit "Sign Up", :class => "btn btn-main" %></p>  
           <% end %> 
           Already signed up? <span id="signup"><%= link_to "Log In", new_session_path %></span>
+          </div>
+<!--         </div> -->
+         </div>
           </div>
