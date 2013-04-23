@@ -3,7 +3,7 @@ Tasteofthenation::Application.routes.draw do
   resources :dishes
 
 
-  root :to => "sessions#new" 
+  root :to => "users#new" 
 
   get "sign_up" => "users#new", :as => "sign_up"  
   get "log_in" => "sessions#new", :as => "log_in"

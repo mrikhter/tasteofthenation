@@ -46,6 +46,14 @@ body {
 
 .login-form {
 margin-left: 65px;
+position: relative;
+}
+
+.login-form h2,
+.login-form h4 {
+text-align: center;
+padding: 5px;
+width: 206px;
 }
 
 legend {
@@ -64,9 +72,10 @@ filter:progid:dximagetransform.microsoft.gradient(startColorstr='#fe9a5d', endCo
 color: #ffffff;
 }
 
-.btn-main {
+.btn.btn-main {
 font-family: normal 13px/15px nimbus-sans, Arial, sans-serif;
-display: inline-block;
+display: inline;
+width: 220px;
 zoom: 1;
 _height: 17px;
 background: #f79030;
