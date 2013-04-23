@@ -14,10 +14,10 @@
         <%= image_tag("IcoreNY.png", :class => 'logo') %>
     <ul class="user_nav">  
       <% if current_user %>  
-        <li>logged in as <%= current_user.username %></li> |
         <li><%= link_to "Restaurants", user_restaurants_path %></li> |
         <li><%= link_to "Bars", user_bars_path %></li> |
-        <li><%= link_to "Log out", log_out_path %></li>
+        <li><%= link_to "Log out", log_out_path %></li> |
+        <li>logged in as <%= current_user.username %></li>
       <% else %>  
          
       <% end %>  
