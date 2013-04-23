@@ -4,11 +4,13 @@
         <div class="form-headers">
       <h2>Log In</h2>  
     </div>
+    <% if alert %>
         <div class="alert alert-error">
-        <% flash.each do |name, msg| %>
-          <%= content_tag :div, msg, :id => "flash#{name}" %>
+            <% flash.each do |name, msg| %>
+          <%= msg %>
         <% end %>
       </div>
+      <% end %>
       <div class="login-form">
        <fieldset>
         <div class="clearfix"> 
@@ -26,3 +28,8 @@
   </div>
 </div>
 
+          <% if flash[:notice] %>
+          <div class="alert alert-error">
+            <center><p id='notice'><i class="icon-warning-sign icon-white"></i> <strong><%= flash[:notice] %></strong></p></center>
+          </div>
+          <% end %>

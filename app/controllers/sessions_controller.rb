@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id  
       redirect_to welcome_path, :notice => "Logged in!"  
     else  
-      flash.now.alert = "Invalid email or password"  
+      flash.now.alert = "No such username, are you sure you created one?"  
       render "new"  
     end  
   end 
