@@ -4,10 +4,14 @@
 
 <ul class="bars"><% @user_bars.sort_by{|b| b.bar.name}.each do |b| %>
   <li>
+    <div class="row-fluid">
     <% check_value = true if b.attended == true %>
     <%= check_box_tag b.id, 'yes', check_value, :class => 'regular-checkbox', :style => "margin: 3px;" %>
+    <span class="barname">
     <%= b.bar.name %>
+  </span>
   <% end %>
+</div>
   </li>
   
 </ul>
