@@ -17,6 +17,22 @@ a.accordion-toggle{
 
 ul.bars li{
   color: rgb(218, 94, 45);
+  padding-bottom: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background: white;
+  margin-bottom: 2px;
+  padding: 8px 15px;
+}
+
+ul.restaurants li{
+  color: rgb(218, 94, 45);
+  padding-bottom: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background: white;
+  margin-bottom: 2px;
+  padding: 8px 15px;
 }
 
 
@@ -116,4 +132,12 @@ ul.user_nav li{
   width:100px;
 }
 
+.accordion-group {
+background-color: white;
+border: none;
+}
+
+.span5 h1{
+  padding-left: 25px;
+}
 
