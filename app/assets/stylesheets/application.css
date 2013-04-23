@@ -12,22 +12,3 @@
  *= require_tree .
  */
 
-.first-page {
-  background:#e4e4da;
-  background-repeat: true;
-  font-family: 'Open Sans', sans-serif;
-  background-repeat: no-repeat;
-  -webkit-background-size:cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size:cover;
-  padding-bottom: 55px;
-}
-
-ul {
-list-style-type: none;
-}
-
-a.accordion-toggle {
-  display: inline;
-}

@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name, :password, :password_confirmation
+  attr_accessible :email, :first_name, :last_name, :password, :password_confirmation, :username
   attr_accessor :password  
 
   has_many :user_restaurants, :dependent => :destroy
@@ -8,12 +8,12 @@ class User < ActiveRecord::Base
   has_many :user_bars, :dependent => :destroy
   has_many :bars, through: :user_bars
 
-  before_save :encrypt_password  
+  # before_save :encrypt_password  
 
-  validates_confirmation_of :password  
-  validates :password, :confirmation => true, :on => :create  
-  validates_presence_of :email  
-  # validates_uniqueness_of :email 
+  # validates_confirmation_of :password  
+  # validates :password, :confirmation => true, :on => :create  
+  validates_presence_of :username  
+  validates_uniqueness_of :username 
 
   after_save :create_associations
 
@@ -24,13 +24,9 @@ class User < ActiveRecord::Base
     end  
   end  
 
-  def self.authenticate(email, password)  
-    user = find_by_email(email)  
-    if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
-      user  
-    else  
-      nil  
-    end  
+  def self.authenticate(username)  
+    user = find_by_username(username)  
+    user 
   end  
 
   def create_associations

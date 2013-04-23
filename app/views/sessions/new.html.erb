@@ -1,18 +1,26 @@
-<div class="first-page">
-  <div class='row-fluid'>
-    <div class='span 8'>
-      <h1>Log In</h1>  
-        
+<div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="login-form">
+      <h2>Log In</h2>  
+        <div class="alert alert-error">
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, :id => "flash#{name}" %>
+        <% end %>
+      </div>
+       <fieldset>
+        <div class="clearfix"> 
       <%= form_tag sessions_path, {:class => 'form-4'} do  %>  
         <p>  
-          <%= text_field_tag :email, params[:email], :placeholder => 'email' %>  
+          <%= text_field_tag :username, params[:username], :placeholder => 'username' %>  
         </p>  
-        <p>   
-          <%= password_field_tag :password, '', :placeholder => 'password'  %>  
-        </p>  
-        <p class="button"><%= submit_tag "SIGN IN" %></p>  
+      </div>
+        <button class="btn btn-main" type="submit">Log In</button> 
       <% end %> 
-      Not a member? <span><%= link_to "Sign-up", new_user_path%></span>
+      Not a member? <span id="signup"><%= link_to "Sign Up", new_user_path%></span>
+      </fieldset>
+      </div>
     </div>
   </div>
 </div>
+

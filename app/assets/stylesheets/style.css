@@ -1,0 +1,105 @@
+/*redish - 101, 47, 55*/
+/*orange - 218, 94, */
+
+
+ul {
+list-style-type: none;
+}
+
+.accordion-heading 
+.accordion-toggle {
+  display: inline;
+}
+
+a.accordion-toggle{
+  color: rgb(218, 94, 45);
+}
+
+ul.bars li{
+  color: rgb(218, 94, 45);
+}
+
+
+/* Override some defaults */
+html, body {
+  background-color: #eee;
+}
+body {
+  padding-top: 40px; 
+}
+.container {
+  width: 300px;
+}
+
+/* The white background content wrapper */
+.container > .content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 -20px; 
+  -webkit-border-radius: 10px 10px 10px 10px;
+     -moz-border-radius: 10px 10px 10px 10px;
+          border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+.login-form {
+margin-left: 65px;
+}
+
+legend {
+margin-right: -50px;
+font-weight: bold;
+color: #404040;
+}
+
+#signup a {
+  color: rgb(218, 94, 45);
+}
+
+.btn-main:hover {
+background: #fe9a5d;
+filter:progid:dximagetransform.microsoft.gradient(startColorstr='#fe9a5d', endColorstr='#f47946', GradientType=0);
+color: #ffffff;
+}
+
+.btn-main {
+font-family: normal 13px/15px nimbus-sans, Arial, sans-serif;
+display: inline-block;
+zoom: 1;
+_height: 17px;
+background: #f79030;
+filter:progid:dximagetransform.microsoft.gradient(startColorstr='#f79030', endColorstr='#e43c13', GradientType=0);
+color: #ffffff;
+border: none;
+-webkit-border-radius: 3px;
+-moz-border-radius:3px;
+border-radius: 3px;
+padding: 5px 10px;
+}
+
+ul.user_nav{
+  float:right;
+}
+
+ul.user_nav a{
+  color: rgb(218, 94, 45);
+}
+
+ul.user_nav li{
+  display: inline;
+  padding-left: 3px;
+}
+
+.alert.alert-error {
+  width: 206px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.logo {
+  width:100px;
+}
+

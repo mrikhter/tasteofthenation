@@ -1,5 +1,8 @@
 Tasteofthenation::Application.routes.draw do
 
+  resources :dishes
+
+
   root :to => "sessions#new" 
 
   get "sign_up" => "users#new", :as => "sign_up"  

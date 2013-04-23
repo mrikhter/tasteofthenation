@@ -11,12 +11,13 @@
   <header class="navbar navbar-fixed-top">
     <nav class="navbar-inner">
     <div class="container">
+        <%= image_tag("IcoreNY.png", :class => 'logo') %>
     <ul class="user_nav">  
       <% if current_user %>  
-        Logged in as <%= current_user.email %>
-        <%= link_to "Restaurants", user_restaurants_path %>
-        <%= link_to "Bars", user_bars_path %>
-        <%= link_to "Log out", log_out_path %>  
+        <li>logged in as <%= current_user.username %></li> |
+        <li><%= link_to "Restaurants", user_restaurants_path %></li> |
+        <li><%= link_to "Bars", user_bars_path %></li> |
+        <li><%= link_to "Log out", log_out_path %></li>
       <% else %>  
          
       <% end %>  
@@ -25,9 +26,9 @@
     </nav>
   </header>
   
-  <% flash.each do |name, msg| %>  
-    <%= content_tag :div, msg, :id => "flash#{name}" %>  
-  <% end %>  
+  <%# flash.each do |name, msg| %>  
+    <%#= content_tag :div, msg, :id => "flash#{name}" %>  
+  <%# end %>  
 
 <%= yield %>
 
