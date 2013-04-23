@@ -3,39 +3,39 @@
 # Do not hesitate to tweak this to your needs
 
 Bar.create([
-  { :name => "Booker & Dax", :created_at => nil, :updated_at => nil },
-  { :name => "Butterfly", :created_at => nil, :updated_at => nil },
-  { :name => "Clover Club", :created_at => nil, :updated_at => nil },
-  { :name => "Dead Rabbit", :created_at => nil, :updated_at => nil },
-  { :name => "Dutch Kills", :created_at => nil, :updated_at => nil },
-  { :name => "Employees Only", :created_at => nil, :updated_at => nil },
-  { :name => "Louis 649", :created_at => nil, :updated_at => nil },
-  { :name => "Macao Trading Company", :created_at => nil, :updated_at => nil },
-  { :name => "Maison Premiere", :created_at => nil, :updated_at => nil },
-  { :name => "PDT", :created_at => nil, :updated_at => nil },
-  { :name => "The Rum House", :created_at => nil, :updated_at => nil },
-  { :name => "Pegu Club", :created_at => nil, :updated_at => nil },
-  { :name => "Pouring Ribbons", :created_at => nil, :updated_at => nil },
-  { :name => "The Raines Law Room", :created_at => nil, :updated_at => nil },
-  { :name => "The Beagle", :created_at => nil, :updated_at => nil },
-  { :name => "Ward III", :created_at => 11, :updated_at => 1 }
+  { :name => "Booker & Dax", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Butterfly", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Clover Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Dead Rabbit", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Dutch Kills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Employees Only", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Louis 649", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Macao Trading Company", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Maison Premiere", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "PDT", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "The Rum House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Pegu Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Pouring Ribbons", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "The Raines Law Room", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "The Beagle", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
 ], :without_protection => true )
 
 
 
 Dish.create([
-  { :name => "main", :restaurant_id => 1, :created_at => 1, :updated_at => 1 },
-  { :name => "side", :restaurant_id => 1, :created_at => 1, :updated_at => 1 },
-  { :name => "dessert", :restaurant_id => 2, :created_at => 1, :updated_at => 1 },
-  { :name => "main", :restaurant_id => 2, :created_at => 1, :updated_at => 1 }
+  { :name => "main", :restaurant_id => 1, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "side", :restaurant_id => 1, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "dessert", :restaurant_id => 2, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "main", :restaurant_id => 2, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
 ], :without_protection => true )
 
 
 
 Restaurant.create([
-  { :name => "Stanton Social and Beauty & Essex", :created_at => 1, :updated_at => 1, :kind => nil },
-  { :name => "L&W Oyster House", :created_at => 1, :updated_at => 1, :kind => nil },
-  { :name => "Maialino", :created_at => 1, :updated_at => 1, :kind => nil },
+  { :name => "Stanton Social and Beauty & Essex", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "L&W Oyster House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Maialino", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "ACME", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Momofuku Ma Peche", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The General", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
@@ -88,8 +88,8 @@ Restaurant.create([
   { :name => "Union Square Cafe", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Untitled at the Whitney", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Willow Road", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "ALDEA", :created_at => 1, :updated_at => 1, :kind => nil },
-  { :name => "Legends Hospitality at Yankee Stadium", :created_at => 1, :updated_at => 1, :kind => nil }
+  { :name => "ALDEA", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Legends Hospitality at Yankee Stadium", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil }
 ], :without_protection => true )
 
 
