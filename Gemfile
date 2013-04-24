@@ -13,6 +13,8 @@ group :production do
   gem 'pg'
 end
 
+gem "refraction", "~> 0.2.0"
+
 gem 'pry'
 
 gem 'twitter-bootstrap-rails'

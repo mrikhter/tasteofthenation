@@ -87,6 +87,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    refraction (0.2.0)
     sass (3.2.7)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -124,6 +125,7 @@ DEPENDENCIES
   pg
   pry
   rails (= 3.2.12)
+  refraction (~> 0.2.0)
   sass-rails (~> 3.2.3)
   seed_dump (~> 0.4.2)
   sqlite3
