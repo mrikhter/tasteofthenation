@@ -163,6 +163,9 @@ padding: 9px;
 border-radius: 3px;
 display: inline-block;
 position: relative;
+margin-right: 15px;
+margin: 3px;
+float: left;
 }
 
 .regular-checkbox:checked {
@@ -185,13 +188,13 @@ color: #99a1a7;
 a.accordion-toggle {
   position: relative;
   top: 2.5px;
-  padding-left: 7px;
+/*  padding-left: 7px;*/
 }
 
 .barname {
   position: relative;
   top: 2px;
-  padding-left: 7px;
+  padding-left: 15px;
 }
 
 .restaurantname, .barname, .bookname {
@@ -210,7 +213,8 @@ margin: 80px auto 0px;
 }
 
 .accordion-heading .accordion-toggle {
-  padding-left: 7px;
+/*  padding-left: 7px;*/
+  padding: 0px;
 }
 
 .navbar img {
@@ -236,5 +240,28 @@ margin: 80px auto 0px;
     margin: 0;
   }
 }
+
+.accordion-body.collapse.out,
+.accordion-inner {
+  padding-left: 20px;
+}
+
+
+/*.regular-checkbox {
+margin: 3px;
+margin-right: 15px;
+float: left;
+}*/
+
+.restaurantname {
+float: left;
+width: 313px;
+display: inline;
+}
+/* 
+ on checkbox
+margin-right: 15px;
+
+took all padding off from a accordian toggle, accordian heading*/
 
 
