@@ -18,7 +18,7 @@ Bar.create([
   { :name => "Pouring Ribbons", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "The Raines Law Room", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "The Beagle", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => 1 }
+  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
 ], :without_protection => true )
 
 
