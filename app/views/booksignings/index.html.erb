@@ -1,0 +1,17 @@
+<div class="container-left">
+  <div class="span5">
+<h1>Book Signings</h1>
+
+<ul class="books"><% @books.sort_by{|b| b.author}.each do |b| %>
+  <li>
+    <div class="row-fluid">
+      <span class="bookname">
+      <%= b.author %>
+    </span>
+    <% end %>
+</div>
+  </li>
+  
+</ul>
+</div>
+</div>

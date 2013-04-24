@@ -1,0 +1,2 @@
+module BooksigningsHelper
+end

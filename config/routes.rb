@@ -1,5 +1,8 @@
 Tasteofthenation::Application.routes.draw do
 
+  resources :booksignings
+
+
   resources :dishes
 
 
