@@ -3,43 +3,106 @@
 # Do not hesitate to tweak this to your needs
 
 Bar.create([
-  { :name => "Booker & Dax", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Butterfly", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Clover Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Dead Rabbit", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Dutch Kills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Employees Only", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Louis 649", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Macao Trading Company", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Maison Premiere", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "PDT", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "The Rum House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Pegu Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Pouring Ribbons", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "The Raines Law Room", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "The Beagle", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
+  { :name => "Booker & Dax", :created_at => nil, :updated_at => nil },
+  { :name => "Butterfly", :created_at => nil, :updated_at => nil },
+  { :name => "Clover Club", :created_at => nil, :updated_at => nil },
+  { :name => "Dead Rabbit", :created_at => nil, :updated_at => nil },
+  { :name => "Dutch Kills", :created_at => nil, :updated_at => nil },
+  { :name => "Employees Only", :created_at => nil, :updated_at => nil },
+  { :name => "Louis 649", :created_at => nil, :updated_at => nil },
+  { :name => "Macao Trading Company", :created_at => nil, :updated_at => nil },
+  { :name => "Maison Premiere", :created_at => nil, :updated_at => nil },
+  { :name => "PDT", :created_at => nil, :updated_at => nil },
+  { :name => "The Rum House", :created_at => nil, :updated_at => nil },
+  { :name => "Pegu Club", :created_at => nil, :updated_at => nil },
+  { :name => "Pouring Ribbons", :created_at => nil, :updated_at => nil },
+  { :name => "The Raines Law Room", :created_at => nil, :updated_at => nil },
+  { :name => "The Beagle", :created_at => nil, :updated_at => nil },
+  { :name => "Ward III", :created_at => 11, :updated_at => 1 }
+], :without_protection => true )
+
+
+
+Booksigning.create([
+  { :author => "Alex Guarnaschelli", :at => nil, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :author => "Max and Eli Sussman", :at => nil, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :author => "Amanda Cohen", :at => nil, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :author => "Julia Moskin", :at => nil, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :author => "Michael Romano", :at => nil, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
 ], :without_protection => true )
 
 
 
 Dish.create([
-  { :name => "main", :restaurant_id => 1, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "side", :restaurant_id => 1, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "dessert", :restaurant_id => 2, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "main", :restaurant_id => 2, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
+  { :name => "Milk Chocolate Salted Caramel Mousse", :restaurant_id => 1, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "L&W Clam Chowder with House Cured Pancetta & Corn Nuts", :restaurant_id => 2, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Honey and Ricotta Sformato", :restaurant_id => 3, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Late Season Beets with pears, peanuts & yogurt", :restaurant_id => 4, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Trout Bagel, Cream Cheese, Mustard", :restaurant_id => 5, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Chinese Chicken Taco", :restaurant_id => 6, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Chilled Squash Soup, Feta Cheese and Fried Leeks", :restaurant_id => 7, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Ceviche Mixto", :restaurant_id => 9, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Kabocha Squash Ravioli with Ricotta Salata and Toasted Pumpkin Seeds", :restaurant_id => 10, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Crawfish Cornbread with Charred Spring Onion Butter", :restaurant_id => 11, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Oxtail Stuffed Piquillo Peppers with Ramp Salsa Verde", :restaurant_id => 12, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Shrimp Toast, chili vinaigrette with pickled cucumber and cilantro salad", :restaurant_id => 13, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Pappa Col Pomodoro", :restaurant_id => 14, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Brodo- Parmesan Dashi, Spring Vegetables, Ricotta", :restaurant_id => 15, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Bo Ssam", :restaurant_id => 16, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Sliced Brisket Slider", :restaurant_id => 17, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Fried Green Tomatoes, Pork Belly, Green Goddess Puree", :restaurant_id => 18, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Hill Country Hot Link with Housemade Shiner Mustard", :restaurant_id => 19, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Dry Aged Prime Beef with Chipotle Chili and Pickled Onions", :restaurant_id => 20, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Pizza Ball with Tomato Sauce and Foccacia", :restaurant_id => 21, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Foie with Rhubarb, Pistachio on Brioche", :restaurant_id => 22, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Smoked Swordfish with Sesame and Chilies", :restaurant_id => 23, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Cheddar Bratwurst with Housemade Relish on a Pretzel Roll", :restaurant_id => 24, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Sizzling Sisisg", :restaurant_id => 25, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Foie Gras Parfait, Hazelnut Brioche, Blood Orange Gelee", :restaurant_id => 26, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Sugar Demo", :restaurant_id => 26, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Cured Duck Breast with Pickled Ramp, Radish Salad and Elderberry Dressing on Rye Bread", :restaurant_id => 27, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Bourbon Pecan Pie", :restaurant_id => 28, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Taylor Bay Scallops with Giardiniera Mignonette", :restaurant_id => 29, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Mackarel Crudo with Fennel and Lemon", :restaurant_id => 30, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Chicken Hot Dog on a Potato Roll with Relish", :restaurant_id => 31, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Blue Hill Speck, Farm Egg", :restaurant_id => 32, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Spiced Mini Lamb Rib with Minted Yogurt", :restaurant_id => 33, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Black Truffle \"Chawan-mushi\" Egg Custard", :restaurant_id => 34, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Roasted Fennel Tart with Kinderhook Creek Sheep's Milk Cheese and Shaved Proscuitto", :restaurant_id => 35, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "House-cured Lamb Pastrami with Coriander Aiolo and Pickled Pearl Onions on a Rye-Caraway Crouton", :restaurant_id => 36, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Marinated Hamachi with Yuzu and Lime", :restaurant_id => 37, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Braised Short Rib, Horseradish, Red Wine Pickled Shallots and Caraway Crisp", :restaurant_id => 38, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Tomato Tart with Smoked Feta", :restaurant_id => 39, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Ed's Loaded New England Clam Chowder with Mini Jalapeno-Cheddar Biscuits", :restaurant_id => 40, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Asparagus Salad with Quinoa", :restaurant_id => 41, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Montauk Squid and Fava Bean Salad", :restaurant_id => 42, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Polenta with Pork Meatballs and Amatriciana Sauce", :restaurant_id => 43, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Duck Confit Sliders, Frisee, Scallions, Cilantro Hoisin", :restaurant_id => 44, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Lamb Bacon-wrapped Chicken Gizzards", :restaurant_id => 45, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Salad of Pea Shoots, Radish Sprouts, Peanuts and Sesame with Honey Lime Dressing", :restaurant_id => 46, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Peanut Sate Soup with Chicken Thai Basil Dumpling", :restaurant_id => 49, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Strawberry Granita with Anise Cream Dessert", :restaurant_id => 50, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Coconut Black Tea Financier with Tahitian Vanilla Milk Chocolate Ganache, Topped with Cocoa Nibs", :restaurant_id => 51, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Ricotta Gnocchi with Truffle Cream", :restaurant_id => 52, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Seared Ramps with White Asparagus and Spring Peas", :restaurant_id => 53, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Pincho de Gambas - Shrimp Skewers with Spring Vegetables", :restaurant_id => 54, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "The Bambino Bombe Dessert", :restaurant_id => 55, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Hot Smoked Sturgeon, Beets, Kale and Almonds", :restaurant_id => 56, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Mini Shrimp Roll with Jalapeno", :restaurant_id => 57, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Honey & Tea Jammer", :restaurant_id => 58, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" },
+  { :name => "Grilled Mushroom, Nettle Pesto, Ramp Pickles, Parmigiano Broth", :restaurant_id => 59, :created_at => "2001-01-01 00:00:00", :updated_at => "2001-02-01 00:00:00" }
 ], :without_protection => true )
 
 
 
 Restaurant.create([
-  { :name => "Stanton Social and Beauty & Essex", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "L&W Oyster House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Maialino", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Stanton Social and Beauty & Essex", :created_at => 1, :updated_at => 1, :kind => nil },
+  { :name => "L&W Oyster House", :created_at => 1, :updated_at => 1, :kind => nil },
+  { :name => "Maialino", :created_at => 1, :updated_at => 1, :kind => nil },
   { :name => "ACME", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Momofuku Ma Peche", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The General", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "COLONIE", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Colonie", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Atera", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Mercadito", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Cole's Greenwich Village", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
@@ -52,30 +115,32 @@ Restaurant.create([
   { :name => "Dinosaur Bar-B-Que", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Red Rooster & Ginny's Supper Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Hill Country Barbecue Market", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "PORTER HOUSE NEW YORK", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Porter House New York", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Meatball Shop", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Pines", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "A Voce", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "ALDEA", :created_at => 1, :updated_at => 1, :kind => nil },
   { :name => "Maharlika Filipino Moderno", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Aureole", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Edi & The Wolf \nSeasonal Restaurant & Weinbar", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Pies 'n' Thighs", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Marrow", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Ai Fiori", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Allswell", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Blue Hill and Blue Hill at Stone Barns", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Blue Smoke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "brushstroke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Cafe 2 and Terrace at MoMa\nTerrace 5 (USHG)", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Char No. 4", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Brushstroke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Cafe 2 and Terrace 5 at MoMa", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Char No 4", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Commerce", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Crown", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "dirt candy", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Crown Bills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Dirt candy", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Ed's Chowder House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Gramercy Tavern", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Il Buco Alimentari & Vineria", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "L'Apicio", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Micheal's", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Mile End \nMile End Sandwich", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Michael's", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Mile End & Mile End Sandwich", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "North End Grill", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Oceana", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Osteria Morini", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
@@ -83,23 +148,11 @@ Restaurant.create([
   { :name => "Telepan", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Modern", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Smith", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "The Yankees", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Legends Hospitality at Yankee Stadium", :created_at => 1, :updated_at => 1, :kind => nil },
   { :name => "Tia Pol", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Union Square Cafe", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Untitled at the Whitney", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Willow Road", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "ALDEA", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Legends Hospitality at Yankee Stadium", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil }
+  { :name => "Beurre & Sel", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Bedford Post Inn", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil }
 ], :without_protection => true )
-
-
-
-User.create([
-  { :first_name => nil, :last_name => nil, :email => nil, :password_hash => nil, :password_salt => nil, :created_at => "2013-04-22 23:34:01", :updated_at => "2013-04-22 23:34:01", :username => "me" },
-  { :first_name => nil, :last_name => nil, :email => nil, :password_hash => nil, :password_salt => nil, :created_at => "2013-04-22 23:36:46", :updated_at => "2013-04-22 23:36:46", :username => "you" },
-  { :first_name => nil, :last_name => nil, :email => nil, :password_hash => nil, :password_salt => nil, :created_at => "2013-04-22 23:54:18", :updated_at => "2013-04-22 23:54:18", :username => "hey" }
-], :without_protection => true )
-
-
-
-
