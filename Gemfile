@@ -13,6 +13,7 @@ group :production do
   gem 'pg'
 end
 
+gem 'rack-rewrite', '~> 1.2.1'
 gem "refraction", "~> 0.2.0"
 
 gem 'pry'
