@@ -16,7 +16,7 @@ a.accordion-toggle{
   color: rgb(218, 94, 45);
 }
 
-
+ul.restaurants li,
 ul.books li,
 ul.bars li{
   color: rgb(218, 94, 45);
@@ -28,15 +28,6 @@ ul.bars li{
   padding: 8px 15px;
 }
 
-ul.restaurants li{
-  color: rgb(218, 94, 45);
-  padding-bottom: 5px;
-  border: 1px solid grey;
-  border-radius: 4px;
-  background: white;
-  margin-bottom: 2px;
-  padding: 8px 15px;
-}
 
 
 /* Override some defaults */
@@ -141,7 +132,7 @@ ul.user_nav li{
 
 .logo {
   padding-top: 10px;
-  width:100px;
+  width:160px;
 }
 
 .accordion-group {
@@ -149,11 +140,18 @@ background-color: white;
 border: none;
 }
 
-.span5 h1{
+.span5 h1, h3{
   padding-left: 25px;
 }
 
+.span8 h1 {
+  padding-left: 25px;
+}
+h4#live {
+  padding-left: 25px;
+  border: none;
 
+}
 .regular-checkbox {
 -webkit-appearance: none;
 background-color: #fafafa;
@@ -239,6 +237,25 @@ width: 80%;
 display: inline;
 }
 
+.link a {
+  font-weight: bold;
+  color: rgb(119, 171, 124);
+}
+
+#event1, #event2, #event3 {
+  color: rgb(218, 94, 45);
+  padding-bottom: 5px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background: white;
+  margin-bottom: 8px;
+  padding: 8px 15px;
+  margin-left: 25px;
+}
+
+h4 {
+  border-bottom: 1px solid grey;
+}
 
 @media all and (max-width: 768px) {
   .navbar img {
@@ -254,6 +271,17 @@ display: inline;
   ul {
     padding-right: 25px;
   }
+
+  ul.user_nav {
+    margin: 0 30px;
+    padding-right: 25px;
+    padding-top: 10px;
+  }
+
+  .events {
+    padding-right: 25px;
+  }
+
   .container > .content {
     margin: 0;
   }

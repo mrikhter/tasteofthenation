@@ -2,9 +2,12 @@
 
 <div class="span5">
   <h1>Restaurants</h1>
+  <h3><span class="percent"><%= @percent %></span>% Visited</h3>
+  
   <div class="accordion" id="accordion2">
 
-    <ul class="restaurants"><% @user_restaurants.sort_by{|r| r.restaurant.name}.each do |r| %>
+    <ul class="restaurants">
+      <% @user_restaurants.sort_by{|r| r.restaurant.name}.each do |r| %>
       <li>
         <div class="row-fluid">
 

@@ -3,10 +3,10 @@
 # Do not hesitate to tweak this to your needs
 
 Bar.create([
-  { :name => "Booker & Dax", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Booker and Dax", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "Butterfly", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "Clover Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Dead Rabbit", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "The Dead Rabbit Grocery and Grog", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "Dutch Kills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "Employees Only", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "Louis 649", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
@@ -18,7 +18,12 @@ Bar.create([
   { :name => "Pouring Ribbons", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "The Raines Law Room", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
   { :name => "The Beagle", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
-  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
+  { :name => "Ward III", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Bootlegger 21 Vodka", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "New York Distilling Company", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Tuthilltown Spirits", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Reyka Vodka", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" },
+  { :name => "Rums of Puerto Rico", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00" }
 ], :without_protection => true )
 
 
@@ -115,26 +120,26 @@ Restaurant.create([
   { :name => "Dinosaur Bar-B-Que", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Red Rooster & Ginny's Supper Club", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Hill Country Barbecue Market", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Porter House New York", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "PORTER HOUSE NEW YORK", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Meatball Shop", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Pines", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "A Voce", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "ALDEA", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Maharlika Filipino Moderno", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Aureole", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Edi & The Wolf \nSeasonal Restaurant & Weinbar", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Edi & The Wolf \nSeäsonal Restaurant & Weinbar", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Pies 'n' Thighs", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "The Marrow", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Ai Fiori", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Allswell", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Blue Hill and Blue Hill at Stone Barns", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Blue Smoke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Brushstroke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "brushstroke", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Cafe 2 and Terrace 5 at MoMa", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Char No 4", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Commerce", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Crown Bills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
-  { :name => "Dirt candy", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Crown/Bills", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
+  { :name => "Dirt Candy", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Ed's Chowder House", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Gramercy Tavern", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
   { :name => "Il Buco Alimentari & Vineria", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil },
@@ -157,4 +162,8 @@ Restaurant.create([
   { :name => "Bedford Post Inn", :created_at => "2001-01-01 00:00:00", :updated_at => "2001-01-01 00:00:00", :kind => nil }
 ], :without_protection => true )
 
+
+Restaurant.where(:name => "Osteria Morini").destroy_all
+Restaurant.where(:name => "Oceana").destroy_all
+Restaurant.where(:name => "Atera").destroy_all
 

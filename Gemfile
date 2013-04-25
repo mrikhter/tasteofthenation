@@ -14,7 +14,7 @@ group :production do
   gem 'pg'
 end
 
-
+gem 'debugger'
 gem 'pry'
 
 gem 'twitter-bootstrap-rails'
