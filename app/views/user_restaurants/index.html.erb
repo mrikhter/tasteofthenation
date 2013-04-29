@@ -15,7 +15,12 @@
       <div class="accordion-heading">
         <% check_value = true if r.attended == true %>
         <%= check_box_tag r.id, 'yes', check_value, :class => 'regular-checkbox', :style => "margin: 3px;margin-right: 15px;" %>
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<%= r.restaurant.name.downcase.gsub(/\s+/, "").gsub('&', "").gsub(/'/, "") %>"><i class="icon-chevron-right"></i>
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<%= r.restaurant.name.downcase.gsub(/\s+/, "").gsub('&', "").gsub(/'/, "") %>">
+
+          <div class ="toggle">
+          <i class="icon-chevron-right"></i>
+          </div>
+
           <div class="restaurantname">
         <%= r.restaurant.name %></a>
       </div>
