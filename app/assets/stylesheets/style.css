@@ -231,7 +231,7 @@ margin-right: 15px;
 float: left;
 }*/
 
-.restaurantname {
+.restaurantname, .barname {
 float: left;
 width: 80%;
 display: inline;

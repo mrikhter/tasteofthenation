@@ -15,3 +15,8 @@ $(function () {
   });
 });
 
+$(function () {
+  $("a.accordion-toggle").click(function (){
+    $(this).children().eq(0).toggleClass('icon-chevron-right icon-chevron-down');
+  });
+});
