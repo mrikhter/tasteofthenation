@@ -9,11 +9,11 @@ class User < ActiveRecord::Base
   has_many :bars, through: :user_bars
 
   # before_save :encrypt_password  
-
   # validates_confirmation_of :password  
   # validates :password, :confirmation => true, :on => :create  
-  validates_presence_of :username  
-  validates_uniqueness_of :username 
+  
+  validates :username, :presence => true
+  validates :username, :uniqueness => true
 
   after_save :create_associations
 
@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
     self.user_restaurants.build(:restaurant_id => restaurant.id, :attended => false).save
   end
   
-    def add_bar_to_user(bar)
+  def add_bar_to_user(bar)
     self.user_bars.build(:bar_id => bar.id, :attended => false).save
   end
 
