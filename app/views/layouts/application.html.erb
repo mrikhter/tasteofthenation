@@ -15,8 +15,8 @@
         <%= image_tag("IcoreNY4.png", :class => 'logo') %>
     <ul class="user_nav">  
       <% if current_user %>  
-        <li><%= link_to "Restaurants", user_restaurants_path %></li> |
-        <li><%= link_to "Bars", user_bars_path %></li> |
+        <li><%= link_to "Restaurants", restaurants_path %></li> |
+        <li><%= link_to "Bars", bars_path %></li> |
         <li><%= link_to "Book Signings", booksignings_path %></li> |
         <li><%= link_to "Live Auctions", live_auction_path %></li> |
         <li><%= link_to "Log out", log_out_path %></li> |

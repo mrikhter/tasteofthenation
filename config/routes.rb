@@ -1,12 +1,9 @@
 Tasteofthenation::Application.routes.draw do
 
-  resources :booksignings
-
-
-  resources :dishes
-
-
   root :to => "users#new" 
+
+  match '/restaurants' => 'user_restaurants#index', as: 'restaurants'
+  match '/bars' => 'user_bars#index', as: 'bars'
 
   get 'live_auction' => "live_auction#index"
   get "sign_up" => "users#new", :as => "sign_up"  
@@ -17,15 +14,16 @@ Tasteofthenation::Application.routes.draw do
   post '/user_restaurants/update_status', to: 'user_restaurants#update_status', as: 'update_status'
   post '/user_bars/update_status', to: 'user_bars#update_status', as: 'update_status'
 
-  # match '/restaurants', to: 'user_restaurants#index'
-  # match '/bars', to: 'user_restaurants#index'
-
   resources :users 
   resources :sessions
   resources :restaurants
   resources :user_bars
   resources :bars
   resources :user_restaurants
+  resources :booksignings
+  resources :dishes
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
