@@ -1,21 +1,25 @@
-<div class="container-left">
+<div>
   <div class="span5">
-<h1>Bars</h1>
+  <h1>Bars</h1>
 
-<ul class="bars"><% @user_bars.sort_by{|b| b.bar.name}.each do |b| %>
-  <li>
-    <div class="row-fluid">
-    <% check_value = true if b.attended == true %>
-    <%= check_box_tag b.id, 'yes', check_value, :class => 'regular-checkbox', :style => "margin: 3px;" %>
-    <span class="barname">
-    <%= b.bar.name %>
-  </span>
-  <% end %>
+  <ul class="bars"><% @user_bars.sort_by{|b| b.bar.name}.each do |b| %>
+    <li>
+      <div class="row-fluid">
+        <% check_value = true if b.attended == true %>
+        <%= check_box_tag b.id, 'yes', check_value, :class => 'regular-checkbox', :style => "margin: 3px;" %>
+        <span class="barname">
+          <%= b.bar.name %>
+        </span>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  </div>
 </div>
-  </li>
-  
-</ul>
-</div>
+
+<div class="span7 hidden-phone">
+  <%= image_tag("bar2.jpg", :class => 'photo2', :width => "550px") %>
+  <%= image_tag("bar1.jpg", :class => 'photo2', :width => "550px") %>
 </div>
 
 <script type="text/javascript">

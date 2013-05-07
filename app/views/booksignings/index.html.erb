@@ -1,19 +1,23 @@
-<div class="container-left">
+<div>
   <div class="span5">
-<h1>Book Signings</h1>
+  <h1>Book Signings</h1>
 
-<ul class="books"><% @books.sort_by{|b| b.author}.each do |b| %>
-  <li>
-    <div class="row-fluid">
-      <span class="bookname">
-      <%= b.author %>
-    </span>
+  <ul class="books">
+    <% @books.sort_by{|b| b.author}.each do |b| %>
+    <li>
+      <div class="row-fluid">
+        <span class="bookname">
+        <%= b.author %>
+        </span>
+      </div>
+    </li>
     <% end %>
+  </ul>
+  </div>
 </div>
-  </li>
-  
-</ul>
-</div>
+
+<div class="span7 hidden-phone">
+  <%= image_tag("cookbook3.jpg", :class => 'photo2') %>
 </div>
 
 <script type="text/javascript">
